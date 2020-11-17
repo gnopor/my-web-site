@@ -10,6 +10,7 @@
             ? `mailto:${contact.contact}`
             : contact.contact
         "
+        target="_blank"
       >
         <img :src="`/images/${contact.logo}`" alt="tayou blaise"
       /></a>
@@ -46,6 +47,7 @@ export default {
 </script>
 
 <style scoped>
+/* cotact wrapper  */
 .contact-content {
   display: flex;
   flex-direction: column;
@@ -53,10 +55,13 @@ export default {
   height: 100vh;
 }
 
+/* contact title */
 h1 {
   color: var(--midtone);
   padding: 50px 0;
 }
+
+/* contact list  */
 
 .contacts {
   padding: 60px 0;
@@ -69,5 +74,10 @@ h1 {
   margin: 10px 30px;
   height: 150px;
   width: 150px;
+  transition: 0.5s ease;
+}
+
+.contacts img:hover {
+  transform: scale(1.2);
 }
 </style>
