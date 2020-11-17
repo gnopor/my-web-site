@@ -1,6 +1,6 @@
 <template>
   <div class="footer-content">
-    <span>@{{ new Date().getFullYear() }} T-Blaise</span>
+    <span>© {{ new Date().getFullYear() }} T-Blaise</span>
   </div>
 </template>
 
