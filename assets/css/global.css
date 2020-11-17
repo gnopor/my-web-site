@@ -1,0 +1,24 @@
+:root {
+  /* shadow - text */
+  --shadow: #0e3747;
+  /* midtone - baccground */
+  --midtone: #07252d;
+  /* highlight- text */
+  --highliht: white;
+  /* Accent- Button and lin */
+  --accent: #03bcf4;
+}
+
+* {
+  font-family: "Roboto";
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* phone and tablet */
+@media screen and (max-width: 620px) {
+}
+
+/* laptop and up */
+@media screen and (min-width: 960px) {
+}
