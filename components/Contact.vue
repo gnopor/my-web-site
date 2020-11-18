@@ -10,6 +10,7 @@
             ? `mailto:${contact.contact}`
             : contact.contact
         "
+        target="_blank"
       >
         <img :src="`/images/${contact.logo}`" alt="tayou blaise"
       /></a>
