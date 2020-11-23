@@ -40,6 +40,10 @@ export default {
           contact: "https://www.youtube.com/channel/UC40UC7mW5Bj3qgdO9XS5ggw",
           logo: "youtube-logo.png",
         },
+        {
+          contact: "https://github.com/gnopor",
+          logo: "git-logo.png",
+        },
       ],
     };
   },
