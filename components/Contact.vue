@@ -56,7 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* contact title */
@@ -83,5 +83,13 @@ h1 {
 
 .contacts img:hover {
   transform: scale(1.2);
+}
+
+/* for tablet and smartphone */
+@media screen and (max-width: 768px) {
+  .contacts img {
+    height: 100px;
+    width: 100px;
+  }
 }
 </style>

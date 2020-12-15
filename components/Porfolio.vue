@@ -36,7 +36,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h1 {
 
 .portfolios {
   display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 </style>

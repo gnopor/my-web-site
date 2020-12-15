@@ -46,6 +46,7 @@ p {
   line-height: 2em;
   text-align: center;
   max-width: 700px;
+  margin: 0 10px;
 }
 
 .competances {

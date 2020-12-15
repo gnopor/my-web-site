@@ -5,28 +5,39 @@
     </div>
 
     <div class="menu">
-      <nuxt-link v-for="(link, index) in links" :key="index" :to="link.to">
+      <nuxt-link v-for="(link, index) in links" :key="index" :to="link.path">
         <div>
           <span>{{ link.title }}</span>
         </div>
       </nuxt-link>
     </div>
 
-    <div class="side-menu-loader">
-      <img src="/images/menu.png" alt="tayou blaise" />
-    </div>
+    <!-- trigger to show sidebar -->
+    <span class="trigger" @click="showSideBar = true">
+      <Menu />
+    </span>
+
+    <Sidebar v-if="showSideBar" :links="links" @onHide="showSideBar = false" />
   </div>
 </template>
 
 <script>
+import Menu from "mdi-vue/Menu.vue";
+import Sidebar from "@/components/Header/Sidebar";
+
 export default {
+  components: {
+    Sidebar,
+    Menu,
+  },
   data() {
     return {
+      showSideBar: false,
       links: [
-        { title: "home", to: "#", icon: "" },
-        { title: "about", to: "#about", icon: "" },
-        { title: "portfolio", to: "#portfolio", icon: "" },
-        { title: "contact", to: "#contact", icon: "" },
+        { title: "home", path: "#", icon: "" },
+        { title: "about", path: "#about", icon: "" },
+        { title: "portfolio", path: "#portfolio", icon: "" },
+        { title: "contact", path: "#contact", icon: "" },
       ],
     };
   },
@@ -85,9 +96,20 @@ export default {
   color: var(--accent);
 }
 
-/* .side-menu-loader */
-
-.side-menu-loader {
+/* trigger  */
+.navbar .trigger {
   display: none;
+}
+
+/* for tablet and smartphone */
+@media screen and (max-width: 768px) {
+  .navbar .trigger {
+    display: initial;
+    color: white;
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
 }
 </style>

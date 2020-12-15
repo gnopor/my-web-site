@@ -67,4 +67,11 @@ h2 {
       0 0 80px #03bcf4, 0 0 160px #03bcf4;
   }
 }
+
+/* for tablet and smartphone */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 5em;
+  }
+}
 </style>
