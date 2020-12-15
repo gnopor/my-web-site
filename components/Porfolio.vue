@@ -37,11 +37,12 @@ export default {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding: 50px 0;
 }
 
 h1 {
   color: var(--midtone);
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 
 .portfolios {
