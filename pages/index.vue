@@ -40,6 +40,9 @@ export default {
     Name,
     Porfolio,
   },
+  mounted() {
+    // this.$_fullname();
+  },
 };
 </script>
 
