@@ -14,18 +14,29 @@
 
 <script>
 import ProjectCard from "@/components/ProjectCard";
-import porfolio from "@/static/porfolio.js";
+import axios from "axios";
 export default {
   components: {
     ProjectCard,
   },
   data() {
     return {
-      projects: {
-        ...porfolio.projects.personnalProject,
-        ...porfolio.projects.otherProjects,
-      },
+      projects: {},
     };
+  },
+  async mounted() {
+    await axios
+      .get("/portfolios.json")
+      .then((res) => {
+        const data = res.data;
+        this.projects = {
+          ...data.personnalProject,
+          ...data.otherProjects,
+        };
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
 };
 </script>

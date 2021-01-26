@@ -17,12 +17,22 @@
 </template>
 
 <script>
-import porfolio from "@/static/porfolio.js";
+import axios from "axios";
 export default {
   data() {
     return {
-      competances: porfolio.competances,
+      competances: [],
     };
+  },
+  async mounted() {
+    await axios
+      .get("/competances.json")
+      .then((res) => {
+        this.competances = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
 };
 </script>
