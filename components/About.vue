@@ -2,11 +2,11 @@
   <div class="about-content">
     <h1>About</h1>
     <p>
-      Passionate about ICT, I am a full-stack web developer with experience in
-      all stages of the development cycle of dynamic web projects. Good
-      knowledge of many programming languages, including HTML5, JavaScript, CSS
-      and Python, I have a variety of skills in networking as well as in
-      development, telecommunications and computer graphics.
+      Passionate about IT and ICT, I am a full-stack web developer with
+      experience in all stages of the development cycle of dynamic web projects.
+      Good knowledge of many programming languages including HTML, JavaScript,
+      CSS and Python, I have varied skills as well in the area of networking
+      than in development, telecommunications and computer graphics.
     </p>
     <div class="competances">
       <div v-for="(competance, index) in competances" :key="index">
