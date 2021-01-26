@@ -19,33 +19,23 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
-      contacts: [
-        {
-          contact: "https://cm.linkedin.com/in/tayou-blaise-9b3a4b191",
-          logo: "linkedIn-logo.png",
-        },
-        { contact: "tayoukengne@gmail.com", logo: "mail-logo.png" },
-        {
-          contact: "https://www.facebook.com/blaise.tayou.58",
-          logo: "facebook-logo.jpg",
-        },
-        {
-          contact: "https://www.instagram.com/tayoublaise/",
-          logo: "instagram-logo.png",
-        },
-        {
-          contact: "https://www.youtube.com/channel/UC40UC7mW5Bj3qgdO9XS5ggw",
-          logo: "youtube-logo.png",
-        },
-        {
-          contact: "https://github.com/gnopor",
-          logo: "git-logo.png",
-        },
-      ],
+      contacts: [],
     };
+  },
+  async mounted() {
+    await axios
+      .get("/contacts.json")
+      .then((res) => {
+        // console.log(res.data);
+        this.contacts = res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
 };
 </script>
