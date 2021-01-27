@@ -13,7 +13,7 @@
     <!-- menu  -->
     <div class="menu">
       <div v-for="(link, index) in links" :key="index">
-        <a :href="link.path" target="_blank">
+        <a :href="link.path">
           <client-only>
             <mdicon v-if="link.icon" :name="link.icon" />
           </client-only>
