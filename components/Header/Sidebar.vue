@@ -3,13 +3,21 @@
     <div class="top">
       <img src="/images/profil.png" alt="tayou blaise" />
 
-      <span class="trigger" @click="hideSideNav"> <Close /> </span>
+      <span class="trigger" @click="hideSideNav">
+        <client-only>
+          <mdicon name="close" />
+        </client-only>
+      </span>
     </div>
 
     <!-- menu  -->
     <div class="menu">
       <div v-for="(link, index) in links" :key="index">
         <a :href="link.path" target="_blank">
+          <client-only>
+            <mdicon v-if="link.icon" :name="link.icon" />
+          </client-only>
+
           {{ link.title }}
         </a>
       </div>
@@ -18,8 +26,6 @@
 </template>
 
 <script>
-import Close from "mdi-vue/Close.vue";
-
 export default {
   props: {
     links: {
@@ -27,9 +33,7 @@ export default {
       required: true,
     },
   },
-  components: {
-    Close,
-  },
+
   methods: {
     hideSideNav() {
       this.$emit("onHide", true);
@@ -82,9 +86,16 @@ export default {
 
 .menu a {
   text-decoration: none;
+  text-transform: capitalize;
   display: flex;
+  align-items: center;
   color: white;
+  font-weight: bold;
   cursor: pointer;
   padding: 20px 0;
+}
+
+.menu a svg {
+  margin: 0 2px;
 }
 </style>

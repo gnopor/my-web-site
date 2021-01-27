@@ -11,10 +11,11 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@mdi/js": "^5.9.55",
     "@nuxtjs/pwa": "^3.0.2",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "mdi-vue": "^1.8.1",
+    "mdi-vue": "^2.2.0",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {

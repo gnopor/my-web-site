@@ -1,9 +1,10 @@
 [
   { "title": "Vue js / Nuxt js", "level": "" },
   { "title": "React js", "level": "" },
-  { "title": "Python / Django", "level": "" },
+  { "title": "Python / Django / Flask", "level": "" },
   { "title": "JavaScript / Node js", "level": "" },
   { "title": "TypeScript", "level": "" },
+  { "title": "Git / Github", "level": "" },
   { "title": "Wordpress", "level": "" },
   { "title": "DevOps / CI CD", "level": "" },
   { "title": "UML", "level": "" },
