@@ -30,8 +30,8 @@ export default {
       .then((res) => {
         const data = res.data;
         this.projects = {
-          ...data.personnalProject,
           ...data.otherProjects,
+          ...data.perseonnalProjects,
         };
       })
       .catch((err) => {
