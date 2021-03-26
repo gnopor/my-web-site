@@ -3,11 +3,16 @@
     "contact": "https://cm.linkedin.com/in/tayou-blaise-9b3a4b191",
     "logo": "linkedIn-logo.png"
   },
-  { "contact": "contact@tayoublaise.tk", "logo": "mail-logo.png" },
   {
     "contact": "https://www.facebook.com/blaise.tayou.58",
     "logo": "facebook-logo.jpg"
   },
+  {
+    "contact": "https://twitter.com/BlaiseTayou",
+    "logo": "twitter-logo.png"
+  },
+  { "contact": "contact@tayoublaise.tk", "logo": "mail-logo.png" },
+
   {
     "contact": "https://www.instagram.com/tayoublaise/",
     "logo": "instagram-logo.png"
