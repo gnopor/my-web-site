@@ -1,7 +1,7 @@
 <template>
   <div class="project-card">
     <div class="project-img">
-      <img :src="`/images/${project.imgUrl}`" alt="TAYOU Blaise" />
+      <img :src="`/images/projects/${project.imgUrl}`" alt="TAYOU Blaise" />
     </div>
 
     <!-- title -->

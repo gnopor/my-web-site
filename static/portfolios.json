@@ -7,6 +7,14 @@
       "description": "Application Web implémentant un système d'authentification d'utilisateurs  que j'ai développé dans le but de faciliter la recherche/le signalement  des pièces d'identité (CNI.....) perdues/trouvées.",
       "taskList": [],
       "url": ""
+    },
+    "arrow": {
+      "title": "Arrow",
+      "enterprise": "CAMHUB",
+      "imgUrl": "arrow-img.png",
+      "description": "Application Web et Mobil de chats multiples room permettant la communication en temps réel entre les utilisateurs, la création des groupes de chat.",
+      "taskList": [],
+      "url": ""
     }
   },
   "otherProjects": {
@@ -26,6 +34,14 @@
       "enterprise": "BEAC",
       "imgUrl": "mabeac-img.png",
       "description": "Conception du site de MABEAC (Mutuelle des Agents de la BEAC) durant un mois de stage a la BEAC agence de Bafoussam, dans le service d’Informatique et d’administration du réseau.",
+      "taskList": [],
+      "url": ""
+    },
+    "kmermarket": {
+      "title": "Kmermarket",
+      "enterprise": "Kmermarket",
+      "imgUrl": "kmermarket-img.png",
+      "description": "Application Web de publications d'annonces où les utilisateurs peuvent créer et modifier des annonces. ",
       "taskList": [],
       "url": ""
     }
