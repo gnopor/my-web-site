@@ -1,12 +1,14 @@
 [
-  { "title": "Vue js / Nuxt js", "level": "" },
+  { "title": "Vue js", "level": "" },
+  { "title": "Nuxt js", "level": "" },
   { "title": "React js", "level": "" },
-  { "title": "Python / Django / Flask", "level": "" },
+  { "title": "Express JS", "level": "" },
+  { "title": "Python / Flask", "level": "" },
   { "title": "JavaScript / Node js", "level": "" },
   { "title": "TypeScript", "level": "" },
   { "title": "Git / Github", "level": "" },
-  { "title": "Wordpress", "level": "" },
   { "title": "DevOps / CI CD", "level": "" },
   { "title": "UML", "level": "" },
+  { "title": "MongoDB", "level": "" },
   { "title": "Linux / Debian", "level": "" }
 ]
