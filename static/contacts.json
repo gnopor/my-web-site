@@ -4,6 +4,19 @@
     "logo": "linkedIn-logo.png"
   },
   {
+    "contact": "https://github.com/gnopor",
+    "logo": "git-logo.png"
+  },
+
+  {
+    "contact": "https://stackoverflow.com/users/11960977/this-gnop",
+    "logo": "stackoverflow-logo.png"
+  },
+  {
+    "contact": "https://gitlab.com/gnopor",
+    "logo": "gitlab-logo.svg"
+  },
+  {
     "contact": "https://www.facebook.com/blaise.tayou.58",
     "logo": "facebook-logo.jpg"
   },
@@ -20,9 +33,5 @@
   {
     "contact": "https://www.youtube.com/channel/UC40UC7mW5Bj3qgdO9XS5ggw",
     "logo": "youtube-logo.png"
-  },
-  {
-    "contact": "https://github.com/gnopor",
-    "logo": "git-logo.png"
   }
 ]
