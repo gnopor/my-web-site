@@ -1,4 +1,4 @@
-# my-web-site
+# my-web-site(deprecated)
 
 ## Build Setup
 
